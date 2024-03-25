@@ -36,6 +36,9 @@ body {
 	background-image: url('../public/image/background.webp');
 	background-size: cover;
 	background-position: center;
-	background-repeat: no-repeat;
-	/* Adicione outras propriedades de estilo conforme necessário */
+	background-repeat: repeat-y;
+}
+
+.animateMenu {
+	@apply transition-all duration-300 ease-in-out py-2 px-3 rounded-[6px] font-semibold hover:bg-white hover:text-[#c02a63];
 }
