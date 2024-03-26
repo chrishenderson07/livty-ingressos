@@ -19,7 +19,7 @@ const ButtonAnimation = ({ label, icon }: ButtonAnimationProps) => {
 
 	return (
 		<Button
-			className="bg-[#c02a63] px-8 py-7 rounded-[6px] font-bold text-base text-white flex gap-2 hover:bg-[#1C1C20] hover:text-white "
+			className="bg-[#c02a63] px-8 py-7 rounded-[6px] font-bold text-base text-white flex gap-2 hover:bg-[#1C1C20] hover:text-white border-solid border-[2px] border-white"
 			onMouseEnter={handleMouseEnter}
 			onMouseOut={handleMouseLeave}>
 			{label}

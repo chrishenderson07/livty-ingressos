@@ -40,5 +40,5 @@ body {
 }
 
 .animateMenu {
-	@apply transition-all duration-300 ease-in-out py-2 px-3 rounded-[6px] font-semibold hover:bg-white hover:text-[#c02a63];
+	@apply transition-all duration-300 ease-in-out py-2 px-3 rounded-[6px] font-semibold hover:bg-white hover:text-[#c02a63] cursor-pointer;
 }
