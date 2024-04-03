@@ -12,6 +12,8 @@ import Link from 'next/link'
 import { IoMdArrowForward } from 'react-icons/io'
 import { RxDownload } from 'react-icons/rx'
 import { BiDollar } from 'react-icons/bi'
+import IntegrationSection from './_components/IntegrationSection'
+import Testimonials from './_components/Testimonials'
 
 const Home = () => {
 	const handleMouseEnter = (event: any) => {
@@ -103,6 +105,8 @@ const Home = () => {
 			</header>
 			<PartnersBar />
 			<Gestao />
+			<IntegrationSection />
+			<Testimonials />
 		</>
 	)
 }
