@@ -16,6 +16,11 @@ import IntegrationSection from './_components/IntegrationSection'
 import Testimonials from './_components/Testimonials'
 import CallToAction from './_components/CallToAction'
 import Events from './_components/Events'
+import DownloadApp from './_components/DownloadApp'
+import SellSection from './_components/SellSection'
+import FeaturesSections from './_components/FeaturesSections'
+import PaymentSection from './_components/PaymentSection'
+import MarketingSection from './_components/MarketingSection'
 
 const Home = () => {
 	const handleMouseEnter = (event: any) => {
@@ -107,10 +112,15 @@ const Home = () => {
 			</header>
 			<PartnersBar />
 			<Gestao />
+			<SellSection />
 			<IntegrationSection />
+			<FeaturesSections />
+			<PaymentSection />
+			<MarketingSection />
 			<Testimonials />
 			<CallToAction />
 			<Events />
+			<DownloadApp />
 		</>
 	)
 }

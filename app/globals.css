@@ -32,6 +32,12 @@ body {
 	}
 }
 
+.swiper-button-prev,
+.swiper-button-next {
+	color: #fff !important;
+	size: 32px !important;
+}
+
 .bg-imagem {
 	background-image: url('../public/image/background.webp');
 	background-size: cover;
@@ -60,4 +66,10 @@ body {
 
 .list-style {
 	@apply list-none flex items-center gap-2 font-semibold text-2xl;
+}
+
+/* Animations */
+
+.upButton {
+	@apply transition-all duration-300 hover:-translate-y-3 hover:shadow-xl cursor-pointer;
 }
