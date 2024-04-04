@@ -14,6 +14,8 @@ import { RxDownload } from 'react-icons/rx'
 import { BiDollar } from 'react-icons/bi'
 import IntegrationSection from './_components/IntegrationSection'
 import Testimonials from './_components/Testimonials'
+import CallToAction from './_components/CallToAction'
+import Events from './_components/Events'
 
 const Home = () => {
 	const handleMouseEnter = (event: any) => {
@@ -107,6 +109,8 @@ const Home = () => {
 			<Gestao />
 			<IntegrationSection />
 			<Testimonials />
+			<CallToAction />
+			<Events />
 		</>
 	)
 }

@@ -43,6 +43,12 @@ body {
 	background-size: contain;
 	background-repeat: no-repeat;
 }
+.bg-events {
+	background-image: url('../public/image/events.webp');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
 
 .ghost-button {
 	@apply text-[#C02A63] text-base font-semibold border-2 py-6 px-8 rounded-[6px] border-[#C02A63] transition-all duration-300 hover:bg-[#C02A63] hover:text-white;
@@ -50,4 +56,8 @@ body {
 
 .animateMenu {
 	@apply transition-all duration-300 ease-in-out py-2 px-3 rounded-[6px] font-semibold hover:bg-white hover:text-[#c02a63] cursor-pointer;
+}
+
+.list-style {
+	@apply list-none flex items-center gap-2 font-semibold text-2xl;
 }
