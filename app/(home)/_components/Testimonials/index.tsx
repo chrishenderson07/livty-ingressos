@@ -14,10 +14,11 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 
-const Testimonials = () => {
-	const url =
-		'https://api.whatsapp.com/send?phone=551640423781&text=Ol%C3%A1%20Livty%20Ingressos,%20eu%20vim%20do%20seu%20site%20e%20gostaria%20de%20falar%20com%20um%20representante!'
+interface TestimonialProps {
+	url: string
+}
 
+const Testimonials = ({ url }: TestimonialProps) => {
 	return (
 		<Section className="bg-[#B6145D]">
 			<div className="container mx-auto">
@@ -82,7 +83,9 @@ const Testimonials = () => {
 					</Card>
 				</div>
 
-				<Link href={url}>
+				<Link
+					href={url}
+					target="_blank">
 					<Button className="bg-[rgba(255,255,255,0.08)] px-3 md:px-8 py-7 mt-10 rounded-[6px] font-bold mx-auto text-sm md:text-base text-[#fff] flex gap-2 hover:bg-[#1C1C20] hover:text-white ">
 						Fale com um de nossos representantes
 					</Button>

@@ -50,7 +50,19 @@ const PaymentSection = () => {
 					slidesPerView={3}
 					spaceBetween={30}
 					navigation
+					loop
 					modules={[Navigation]}
+					breakpoints={{
+						0: {
+							slidesPerView: 1,
+						},
+						640: {
+							slidesPerView: 2,
+						},
+						768: {
+							slidesPerView: 3,
+						},
+					}}
 					className="mt-12">
 					{cardContent.map((content, index) => (
 						<SwiperSlide

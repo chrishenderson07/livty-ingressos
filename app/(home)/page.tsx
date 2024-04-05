@@ -68,7 +68,7 @@ const Home = () => {
 									className="px-3 md:px-8 py-7 rounded-[6px] font-bold text-sm  md:text-base flex gap-2 hover:bg-white hover:text-[#1C1C20]"
 									onMouseEnter={handleMouseEnter}
 									onMouseOut={handleMouseLeave}>
-									Conheça nosso site de ingrressos
+									Conheça nosso site de ingressos
 									<RxDownload size={24} />
 								</Button>
 							</Link>
@@ -83,13 +83,13 @@ const Home = () => {
 							</h4>
 						</div>
 					</div>
-					<div className="flex flex-col justify-end relative">
+					<div className="flex flex-col justify-end items-center  relative">
 						<Image
 							src={require('../../public/image/model1.webp')}
 							alt="Modelo Livty Ingressos"
 						/>
 
-						<Card className="lg:absolute left-4 bottom-4 bg-white rounded-2xl w-60 md:w-72">
+						<Card className="md:absolute left-4 bottom-4 bg-white rounded-2xl w-60 md:w-72">
 							<CardHeader className="space-y-3">
 								<BiDollar
 									size={32}
@@ -100,7 +100,7 @@ const Home = () => {
 								</CardTitle>
 							</CardHeader>
 						</Card>
-						<Card className="lg:absolute  p-0  right-4 top-1/2 bg-white rounded-2xl w-60 md:w-72 mt-4">
+						<Card className="md:absolute  p-0  right-4 top-1/2 bg-white rounded-2xl w-60 md:w-72 mt-4">
 							<CardHeader className="py-0">
 								<CardTitle className="text-[#1D1D21] text-xl">
 									Mais de 20 Mil ingressos vendidos
@@ -111,15 +111,15 @@ const Home = () => {
 				</main>
 			</header>
 			<PartnersBar />
-			<Gestao />
+			<Gestao url={url} />
 			<SellSection />
-			<IntegrationSection />
+			<IntegrationSection url={url} />
 			<FeaturesSections />
 			<PaymentSection />
 			<MarketingSection />
-			<Testimonials />
+			<Testimonials url={url} />
 			<CallToAction />
-			<Events />
+			<Events url={url} />
 			<DownloadApp />
 		</>
 	)

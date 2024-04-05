@@ -4,8 +4,13 @@ import Section from '../Section'
 import { FaCheck } from 'react-icons/fa'
 import { IoMdArrowForward } from 'react-icons/io'
 import Image from 'next/image'
+import { Link } from 'lucide-react'
 
-const Events = () => {
+interface EventsProps {
+	url: string
+}
+
+const Events = ({ url }: EventsProps) => {
 	const handleMouseEnter = (event: any) => {
 		event.currentTarget.querySelector('svg').style.transition = 'all'
 		event.currentTarget.querySelector('svg').style.transitionDuration = '0.3s'
@@ -19,7 +24,7 @@ const Events = () => {
 	return (
 		<Section className="bg-[#EB0171] pt-0 pb-0">
 			<div className="flex">
-				<div className="pl-8 w-1/3 py-12 relative">
+				<div className="pl-8 w-2/5 max-w-3/5 py-12 relative">
 					<h4 className="text-2xl font-semibold">Seja ele:</h4>
 					<ul className="space-y-4 mt-4">
 						<li className="list-style">
@@ -73,12 +78,16 @@ const Events = () => {
 						width={130}
 					/>
 
-					<Button
-						className="mt-10 bg-white px-3 md:px-8 py-7 rounded-[6px] font-bold text-sm md:text-base text-[#1C1C20] flex gap-2 hover:bg-[#1C1C20] hover:text-white "
-						onMouseEnter={handleMouseEnter}
-						onMouseOut={handleMouseLeave}>
-						Vem pra Livty <IoMdArrowForward size={24} />
-					</Button>
+					<Link
+						href={url}
+						target="_blank">
+						<Button
+							className="mt-10 bg-white px-3 md:px-8 py-7 rounded-[6px] font-bold text-sm md:text-base text-[#1C1C20] flex gap-2 hover:bg-[#1C1C20] hover:text-white "
+							onMouseEnter={handleMouseEnter}
+							onMouseOut={handleMouseLeave}>
+							Vem pra Livty <IoMdArrowForward size={24} />
+						</Button>
+					</Link>
 				</div>
 
 				<div className="flex-1 bg-events"></div>

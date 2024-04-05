@@ -2,10 +2,11 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 
-const Gestao = () => {
-	const url =
-		'https://api.whatsapp.com/send?phone=551640423781&text=Ol%C3%A1%20Livty%20Ingressos,%20eu%20vim%20do%20seu%20site%20e%20gostaria%20de%20falar%20com%20um%20representante!'
+interface GestaoProps {
+	url: string
+}
 
+const Gestao = ({ url }: GestaoProps) => {
 	return (
 		<section className="py-12 bg-white">
 			<div className="container mx-auto flex flex-col md:flex-row items-center justify-center gap-8">

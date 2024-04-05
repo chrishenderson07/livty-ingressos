@@ -6,10 +6,11 @@ import Link from 'next/link'
 import Element from '../../../../public/image/element.webp'
 import Image from 'next/image'
 
-const IntegrationSection = () => {
-	const url =
-		'https://api.whatsapp.com/send?phone=551640423781&text=Ol%C3%A1%20Livty%20Ingressos,%20eu%20vim%20do%20seu%20site%20e%20gostaria%20de%20falar%20com%20um%20representante!'
+interface IntegrationSectionProps {
+	url: string
+}
 
+const IntegrationSection = ({ url }: IntegrationSectionProps) => {
 	return (
 		<Section className="bg-white bg-maquininha">
 			<div className=" container mx-auto flex justify-end ">
