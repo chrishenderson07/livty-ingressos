@@ -14,7 +14,7 @@ const IntegrationSection = ({ url }: IntegrationSectionProps) => {
 	return (
 		<Section className="bg-white bg-maquininha">
 			<div className=" container mx-auto flex justify-end ">
-				<div className="md:w-1/3 flex flex-col gap-4 items-end text-right">
+				<div className="mt-80 md:mt-0 md:w-1/3 flex flex-col gap-4 items-end text-right">
 					<h2 className="text-3xl font-semibold text-[#1C1C20] leading-tight">
 						Integração de Vendas com o Bar do seu Evento
 					</h2>

@@ -19,7 +19,7 @@ const DownloadApp = () => {
 					Baixe nosso app
 				</h1>
 
-				<div className="flex gap-4 justify-center mt-8">
+				<div className="flex flex-col md:flex-row gap-4 items-center justify-center mt-8">
 					<Link
 						href={url}
 						target="_blank">

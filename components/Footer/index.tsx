@@ -57,7 +57,7 @@ const Footer = () => {
 				</div>
 			</div>
 
-			<div className="container mx-auto mt-10 p-4 px-8 bg-[rgba(255,255,255,0.04)] flex justify-between text-base">
+			<div className="container mx-auto mt-10 p-4 px-8 bg-[rgba(255,255,255,0.04)] flex flex-col md:flex-row items-center md:items-start text-center md:text-left justify-between text-base">
 				<p>2024 © Livty Ingressos Todos os direitos reservados.</p>
 				<p className="flex items-center gap-1">
 					Desenvolvido com <FaRegHeart /> pela

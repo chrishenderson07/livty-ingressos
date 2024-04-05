@@ -24,7 +24,7 @@ const Events = ({ url }: EventsProps) => {
 	return (
 		<Section className="bg-[#EB0171] pt-0 pb-0">
 			<div className="flex">
-				<div className="pl-8 w-2/5 max-w-3/5 py-12 relative">
+				<div className="pl-8 w-4/5 md:w-2/5 md:max-w-3/5 py-12 relative">
 					<h4 className="text-2xl font-semibold">Seja ele:</h4>
 					<ul className="space-y-4 mt-4">
 						<li className="list-style">
@@ -78,7 +78,7 @@ const Events = ({ url }: EventsProps) => {
 						width={130}
 					/>
 
-					<Link
+					<a
 						href={url}
 						target="_blank">
 						<Button
@@ -87,7 +87,7 @@ const Events = ({ url }: EventsProps) => {
 							onMouseOut={handleMouseLeave}>
 							Vem pra Livty <IoMdArrowForward size={24} />
 						</Button>
-					</Link>
+					</a>
 				</div>
 
 				<div className="flex-1 bg-events"></div>

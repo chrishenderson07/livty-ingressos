@@ -64,10 +64,10 @@ const SellSection = () => {
 	return (
 		<Section className="bg-white">
 			<div className="container mx-auto">
-				<h2 className="text-3xl font-semibold text-[#1C1C20] leading-tight w-1/2 text-center mx-auto">
+				<h2 className="text-3xl font-semibold text-[#1C1C20] leading-tight md:w-1/2 text-center mx-auto">
 					Integração de Vendas com o Bar do seu Evento
 				</h2>
-				<p className="w-1/2 text-center mx-auto text-[#606060] text-base my-2">
+				<p className="md:w-1/2 text-center mx-auto text-[#606060] text-base my-2">
 					Venda de forma flexível e simples: pix, cartão, débito ou dinheiro.
 					Controle seu evento em tempo real, cadastre comissários e gerencie
 					participantes com facilidade - tudo na palma da sua mão!
