@@ -1,3 +1,5 @@
+'use client'
+
 import Section from '../Section'
 
 import Image from 'next/image'
@@ -74,7 +76,6 @@ const PaymentSection = () => {
 										src={content.icon}
 										alt="Element"
 										className="mx-auto"
-										width={40}
 									/>
 									<CardTitle className="text-white text-xl leading-none">
 										{content.title}

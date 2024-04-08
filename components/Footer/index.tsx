@@ -1,3 +1,5 @@
+'use client'
+
 import Image from 'next/image'
 import Link from 'next/link'
 import {
@@ -16,11 +18,13 @@ const Footer = () => {
 	const linkedin = 'https://www.linkedin.com/livtyingressos'
 	const instagram = 'https://www.instagram.com/livtyingressos'
 
+	const Logo = require('@/public/image/Logo.webp')
+
 	return (
 		<footer className="bg-[#C02A63] py-12">
 			<div className="container mx-auto max-w-xl flex justify-center flex-col items-center gap-7">
 				<Image
-					src={require('@/public/image/Logo.webp')}
+					src={Logo}
 					alt="Logo Livty Ingressos"
 				/>
 				<p className="text-[#EDEDED] text-lg font-normal text-center">

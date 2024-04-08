@@ -9,55 +9,64 @@ import {
 	CardTitle,
 } from '@/components/ui/card'
 
+import seguranca from '@/public/image/icons/hft-07.webp'
+import vendas from '@/public/image/icons/hft-09.webp'
+import gestao from '@/public/image/icons/hft-10.webp'
+import validacao from '@/public/image/icons/validacao.webp'
+import maquinas from '@/public/image/icons/maquina-bar.webp'
+import cashless from '@/public/image/icons/cashless.webp'
+import maquinaIngresso from '@/public/image/icons/maquina-ingresso.webp'
+import totem from '@/public/image/icons/totem-auto.webp'
+
 const SellSection = () => {
 	const cardContent = [
 		{
 			title: 'Segurança',
 			description:
 				'Utilizamos o melhor da segurança em pagamentos online com autenticação (iToken).',
-			icon: require('@/public/image/icons/hft-07.webp'),
+			icon: seguranca,
 		},
 		{
 			title: 'Vendas Online',
 			description:
 				'Via site/app ou portal comissário. Receba em nosso pix, evite acertos e inadimplência.',
-			icon: require('@/public/image/icons/hft-09.webp'),
+			icon: vendas,
 		},
 		{
 			title: 'Gestão Financeira',
 			description:
 				'Gerencie suas vendas de forma eficiente e tome decisões financeiras estratégicas.',
-			icon: require('@/public/image/icons/hft-10.webp'),
+			icon: gestao,
 		},
 		{
 			title: 'Validação',
 			description:
 				'Valide a autenticidade dos ingressos com rapidez e segurança.',
-			icon: require('@/public/image/icons/validacao.webp'),
+			icon: validacao,
 		},
 		{
 			title: 'Máquinas Bar',
 			description:
 				'Aumente as vendas de produtos do seu evento com praticidade, segurança e agilidade.',
-			icon: require('@/public/image/icons/maquina-bar.webp'),
+			icon: maquinas,
 		},
 		{
 			title: 'Cashless',
 			description:
 				'Simplifique suas vendas com o nosso sistema cashless, oferecendo conveniência e segurança em seus eventos.',
-			icon: require('@/public/image/icons/cashless.webp'),
+			icon: cashless,
 		},
 		{
 			title: 'Máquinas Ingressos',
 			description:
 				'Venda ingressos físicos de forma fácil e segura para os seus eventos.',
-			icon: require('@/public/image/icons/maquina-ingresso.webp'),
+			icon: maquinaIngresso,
 		},
 		{
 			title: 'Totem Autoatendimento',
 			description:
 				'Acelere suas vendas, proporcionando praticidade e eficiência aos seus clientes.',
-			icon: require('@/public/image/icons/totem-auto.webp'),
+			icon: totem,
 		},
 	]
 

@@ -1,10 +1,11 @@
+'use client'
+
 import { Button } from '@/components/ui/button'
 import Section from '../Section'
 
 import { FaCheck } from 'react-icons/fa'
 import { IoMdArrowForward } from 'react-icons/io'
 import Image from 'next/image'
-import { Link } from 'lucide-react'
 
 interface EventsProps {
 	url: string

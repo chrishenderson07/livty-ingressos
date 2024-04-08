@@ -33,7 +33,7 @@ const FeaturesSections = () => {
 						key={index}
 						className="list-style">
 						<FaRegCircleCheck
-							size={28}
+							size={32}
 							color="#C02A63"
 						/>
 						<h4 className="text-[#1D1D21] text-xl font-medium">

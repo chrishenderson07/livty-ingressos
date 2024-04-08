@@ -2,6 +2,8 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 
+import gestao from '@/public/image/gestao.webp'
+
 interface GestaoProps {
 	url: string
 }
@@ -32,7 +34,7 @@ const Gestao = ({ url }: GestaoProps) => {
 
 				<div className="flex-3">
 					<Image
-						src={require('../../../../public/image/gestao.webp')}
+						src={gestao}
 						alt="Gestão"
 					/>
 				</div>

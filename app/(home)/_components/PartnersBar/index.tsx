@@ -1,5 +1,11 @@
 import Image from 'next/image'
 
+import netskope from '@/public/image/partners/Netskope.svg'
+import toyota from '@/public/image/partners/Toyota.svg'
+import airbnb from '@/public/image/partners/Airbnb.svg'
+import capitalOne from '@/public/image/partners/CapitalOne.svg'
+import spotify from '@/public/image/partners/Spotify.svg'
+
 const PartnersBar = () => {
 	return (
 		<section className="py-12 bg-[#EAEAEA]">
@@ -14,23 +20,23 @@ const PartnersBar = () => {
 				</div>
 				<div className="flex-3 flex md:flex-row items-center justify-center flex-wrap gap-7">
 					<Image
-						src={require('../../../../public/image/partners/Netskope.svg')}
+						src={netskope}
 						alt="Partner 1"
 					/>
 					<Image
-						src={require('../../../../public/image/partners/Toyota.svg')}
+						src={toyota}
 						alt="Partner 1"
 					/>
 					<Image
-						src={require('../../../../public/image/partners/Airbnb.svg')}
+						src={airbnb}
 						alt="Partner 1"
 					/>
 					<Image
-						src={require('../../../../public/image/partners/CapitalOne.svg')}
+						src={capitalOne}
 						alt="Partner 1"
 					/>
 					<Image
-						src={require('../../../../public/image/partners/Spotify.svg')}
+						src={spotify}
 						alt="Partner 1"
 					/>
 				</div>
