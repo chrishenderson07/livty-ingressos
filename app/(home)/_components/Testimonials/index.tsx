@@ -19,7 +19,9 @@ interface TestimonialProps {
 
 const Testimonials = ({ url }: TestimonialProps) => {
 	return (
-		<Section className="bg-[#B6145D]">
+		<Section
+			id="feedback"
+			className="bg-[#B6145D]">
 			<div className="container mx-auto">
 				<h2 className="text-4xl font-semibold text-[#fff] text-center">
 					Feedbacks de Clientes

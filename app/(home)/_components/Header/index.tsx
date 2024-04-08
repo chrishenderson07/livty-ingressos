@@ -11,7 +11,7 @@ import { RxDownload } from 'react-icons/rx'
 import { BiDollar } from 'react-icons/bi'
 import { Button } from '@/components/ui/button'
 
-import { motion } from 'framer-motion'
+import { motion, useScroll } from 'framer-motion'
 
 interface HeaderProps {
 	url: string
@@ -37,6 +37,9 @@ const Header = ({ url }: HeaderProps) => {
 			opacity: 1,
 			y: 0,
 			transition: {
+				transition: {
+					duration: 3,
+				},
 				staggerChildren: 0.3,
 			},
 		},
@@ -45,7 +48,6 @@ const Header = ({ url }: HeaderProps) => {
 	const item = {
 		hidden: { opacity: 0 },
 		visible: {
-			y: 0,
 			opacity: 1,
 		},
 	}
@@ -128,15 +130,21 @@ const Header = ({ url }: HeaderProps) => {
 								</Link>
 							</div>
 						</motion.li>
-						<div className=" flex flex-col items-center md:items-start md:flex-row gap-3 mt-12">
-							<Image
-								src={imageThumb}
-								alt="Instagram"
-							/>
-							<h4 className="text-[#D6D6D6] text-xl font-normal text-center md:text-left">
-								Mais de 50 Labels já passaram pela Livty!
-							</h4>
-						</div>
+						<motion.li
+							className="textAnimationItem"
+							variants={textAnimationItem}>
+							<div className=" flex flex-col items-center md:items-start md:flex-row gap-3 mt-12">
+								<motion.div>
+									<Image
+										src={imageThumb}
+										alt="Instagram"
+									/>
+								</motion.div>
+								<h4 className="text-[#D6D6D6] text-xl font-normal text-center md:text-left">
+									Mais de 50 Labels já passaram pela Livty!
+								</h4>
+							</div>
+						</motion.li>
 					</div>
 					<div className="flex flex-col justify-end items-center  relative">
 						<Image

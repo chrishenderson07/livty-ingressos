@@ -10,7 +10,9 @@ interface GestaoProps {
 
 const Gestao = ({ url }: GestaoProps) => {
 	return (
-		<section className="py-12 bg-white">
+		<section
+			id="gestao"
+			className="py-12 bg-white">
 			<div className="container mx-auto flex flex-col md:flex-row items-center justify-center gap-8">
 				<div className="space-y-5 flex-2">
 					<h2 className="text-3xl font-semibold text-[#1C1C20]">

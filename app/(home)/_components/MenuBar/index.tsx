@@ -23,16 +23,16 @@ const MenuBar = () => {
 						<Link href="/"> Início </Link>
 					</li>
 					<li className="animateMenu">
-						<Link href="/sobre"> Gestão Facilitada </Link>
+						<a href="#gestao"> Gestão Facilitada </a>
 					</li>
 					<li className="animateMenu">
-						<Link href="/servicos">Livty Pay</Link>
+						<Link href="#livty">Livty Pay</Link>
 					</li>
 					<li className="animateMenu">
-						<Link href="/contato">Feedbacks</Link>
+						<Link href="#feedback">Feedbacks</Link>
 					</li>
 					<li className="animateMenu">
-						<Link href="/contato">Eventos</Link>
+						<Link href="#eventos">Eventos</Link>
 					</li>
 				</ul>
 			</div>

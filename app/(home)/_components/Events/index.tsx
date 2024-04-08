@@ -23,7 +23,9 @@ const Events = ({ url }: EventsProps) => {
 	}
 
 	return (
-		<Section className="bg-[#EB0171] pt-0 pb-0">
+		<Section
+			id="eventos"
+			className="bg-[#EB0171] pt-0 pb-0">
 			<div className="flex">
 				<div className="pl-8 w-4/5 md:w-2/5 md:max-w-3/5 py-12 relative">
 					<h4 className="text-2xl font-semibold">Seja ele:</h4>
