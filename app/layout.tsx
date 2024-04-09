@@ -16,7 +16,9 @@ export default function RootLayout({
 	children: React.ReactNode
 }>) {
 	return (
-		<html lang="pt-bt">
+		<html
+			lang="pt-bt"
+			className="scroll-smooth overflow-x-hidden">
 			<body className={archivo.className}>
 				{children}
 				<Footer />
