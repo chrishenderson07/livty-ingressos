@@ -18,15 +18,21 @@ const config = {
 			},
 		},
 		extend: {
-			backgroundImage: {
-				'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-				'gradient-conic':
-					'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-				'pink-gradient': 'linear-gradient(180deg, #EB0171 0%, #C5005E 100%)',
+			// backgroundImage: {
+			// 	'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+			// 	'gradient-conic':
+			// 		'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+			// 	'pink-gradient': 'linear-gradient(180deg, #EB0171 0%, #C5005E 100%)',
+			// 	'new-image': 'url("../public/image/background.webp")',
+			// 	'maquininha-image': 'url("../public/image/maquininha.webp")',
+			// 	'event-image': 'url("../public/image/events.webp")',
+			// },
+
+			backgroundImage: () => ({
 				'new-image': 'url("../public/image/background.webp")',
 				'maquininha-image': 'url("../public/image/maquininha.webp")',
 				'event-image': 'url("../public/image/events.webp")',
-			},
+			}),
 
 			fontFamily: {
 				archivo: 'Archivo',
