@@ -53,6 +53,10 @@ body {
 	background-repeat: no-repeat;
 }
 
+.test {
+	color: #fff;
+}
+
 .ghost-button {
 	@apply text-[#C02A63] text-base font-semibold border-2 py-6 px-8 rounded-[6px] border-[#C02A63] transition-all duration-300 hover:bg-[#C02A63] hover:text-white;
 }
