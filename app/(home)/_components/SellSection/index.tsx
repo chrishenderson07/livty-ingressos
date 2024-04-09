@@ -17,6 +17,8 @@ import maquinas from '@/public/image/icons/maquina-bar.webp'
 import cashless from '@/public/image/icons/cashless.webp'
 import maquinaIngresso from '@/public/image/icons/maquina-ingresso.webp'
 import totem from '@/public/image/icons/totem-auto.webp'
+import FadeIn from '@/app/_animations/FadeIn'
+import FadeInListItems from '@/app/_animations/FadeInListItems'
 
 const SellSection = () => {
 	const cardContent = [
@@ -73,16 +75,21 @@ const SellSection = () => {
 	return (
 		<Section className="bg-white">
 			<div className="container mx-auto">
-				<h2 className="text-3xl font-semibold text-[#1C1C20] leading-tight md:w-1/2 text-center mx-auto">
-					Integração de Vendas com o Bar do seu Evento
-				</h2>
-				<p className="md:w-1/2 text-center mx-auto text-[#606060] text-base my-2">
-					Venda de forma flexível e simples: pix, cartão, débito ou dinheiro.
-					Controle seu evento em tempo real, cadastre comissários e gerencie
-					participantes com facilidade - tudo na palma da sua mão!
-				</p>
-
-				<div className="gridColumn flex justify-center gap-4 flex-wrap mt-10">
+				<FadeIn direction="top">
+					<h2 className="text-3xl font-semibold text-[#1C1C20] leading-tight md:w-1/2 text-center mx-auto">
+						Facilitando suas Vendas como Nunca Antes!
+					</h2>
+				</FadeIn>
+				<FadeIn delay={0.5}>
+					<p className="md:w-1/2 text-center mx-auto text-[#606060] text-base my-2">
+						Venda de forma flexível e simples: pix, cartão, débito ou dinheiro.
+						Controle seu evento em tempo real, cadastre comissários e gerencie
+						participantes com facilidade - tudo na palma da sua mão!
+					</p>
+				</FadeIn>
+				<FadeInListItems
+					direction="top"
+					className="gridColumn flex justify-center items-stretch gap-4 flex-wrap mt-10">
 					{cardContent.map((content, index) => (
 						<Card
 							key={index}
@@ -105,7 +112,7 @@ const SellSection = () => {
 							</CardContent>
 						</Card>
 					))}
-				</div>
+				</FadeInListItems>
 			</div>
 		</Section>
 	)
