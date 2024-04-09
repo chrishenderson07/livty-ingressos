@@ -18,7 +18,6 @@ import cashless from '@/public/image/icons/cashless.webp'
 import maquinaIngresso from '@/public/image/icons/maquina-ingresso.webp'
 import totem from '@/public/image/icons/totem-auto.webp'
 import FadeIn from '@/app/_animations/FadeIn'
-import FadeInListItems from '@/app/_animations/FadeInListItems'
 
 const SellSection = () => {
 	const cardContent = [
@@ -87,32 +86,32 @@ const SellSection = () => {
 						participantes com facilidade - tudo na palma da sua mão!
 					</p>
 				</FadeIn>
-				<FadeInListItems
-					direction="top"
-					className="gridColumn flex justify-center items-stretch gap-4 flex-wrap mt-10">
-					{cardContent.map((content, index) => (
-						<Card
-							key={index}
-							className="w-60 text-center border-[#C02A63] rounded-[10px]">
-							<CardHeader>
-								<Image
-									src={content.icon}
-									alt="Element"
-									className="mx-auto"
-									width={50}
-								/>
-								<CardTitle className="text-[#151515] text-xl leading-none">
-									{content.title}
-								</CardTitle>
-							</CardHeader>
-							<CardContent className="px-8">
-								<CardDescription className="text-[#353434] font-medium -mt-2">
-									{content.description}
-								</CardDescription>
-							</CardContent>
-						</Card>
-					))}
-				</FadeInListItems>
+				<FadeIn delay={1}>
+					<div className="gridColumn flex justify-center gap-4 flex-wrap mt-10">
+						{cardContent.map((content, index) => (
+							<Card
+								key={index}
+								className="w-60 text-center border-[#C02A63] rounded-[10px]">
+								<CardHeader>
+									<Image
+										src={content.icon}
+										alt="Element"
+										className="mx-auto"
+										width={50}
+									/>
+									<CardTitle className="text-[#151515] text-xl leading-none">
+										{content.title}
+									</CardTitle>
+								</CardHeader>
+								<CardContent className="px-8">
+									<CardDescription className="text-[#353434] font-medium -mt-2">
+										{content.description}
+									</CardDescription>
+								</CardContent>
+							</Card>
+						))}
+					</div>
+				</FadeIn>
 			</div>
 		</Section>
 	)

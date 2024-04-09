@@ -6,6 +6,7 @@ import Section from '../Section'
 import { FaCheck } from 'react-icons/fa'
 import { IoMdArrowForward } from 'react-icons/io'
 import Image from 'next/image'
+import FadeInListItems from '@/app/_animations/FadeInListItems'
 
 interface EventsProps {
 	url: string
@@ -30,48 +31,52 @@ const Events = ({ url }: EventsProps) => {
 				<div className="pl-8 w-4/5 md:w-2/5 md:max-w-3/5 py-12 relative">
 					<h4 className="text-2xl font-semibold">Seja ele:</h4>
 					<ul className="space-y-4 mt-4">
-						<li className="list-style">
-							<FaCheck
-								size={30}
-								color="#6B0033"
-							/>
-							Teste
-						</li>
-						<li className="list-style">
-							<FaCheck
-								size={30}
-								color="#6B0033"
-							/>
-							Festa Univerrsitária
-						</li>
-						<li className="list-style">
-							<FaCheck
-								size={30}
-								color="#6B0033"
-							/>
-							Rodeio
-						</li>
-						<li className="list-style">
-							<FaCheck
-								size={30}
-								color="#6B0033"
-							/>
-							Palestras
-						</li>
-						<li className="list-style">
-							<FaCheck
-								size={30}
-								color="#6B0033"
-							/>
-							Conferências
-						</li>
-						<li className="list-style">
-							<FaCheck
-								size={30}
-								color="#6B0033"
-							/>
-							Formaturas
-						</li>
+						<FadeInListItems
+							direction="left"
+							className="space-y-4 mt-4">
+							<li className="list-style">
+								<FaCheck
+									size={30}
+									color="#6B0033"
+								/>
+								Festivel
+							</li>
+							<li className="list-style">
+								<FaCheck
+									size={30}
+									color="#6B0033"
+								/>
+								Festa Univerrsitária
+							</li>
+							<li className="list-style">
+								<FaCheck
+									size={30}
+									color="#6B0033"
+								/>
+								Rodeio
+							</li>
+							<li className="list-style">
+								<FaCheck
+									size={30}
+									color="#6B0033"
+								/>
+								Palestras
+							</li>
+							<li className="list-style">
+								<FaCheck
+									size={30}
+									color="#6B0033"
+								/>
+								Conferências
+							</li>
+							<li className="list-style">
+								<FaCheck
+									size={30}
+									color="#6B0033"
+								/>
+								Formaturas
+							</li>
+						</FadeInListItems>
 					</ul>
 
 					<Image

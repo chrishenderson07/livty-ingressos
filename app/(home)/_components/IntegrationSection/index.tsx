@@ -5,6 +5,7 @@ import Link from 'next/link'
 
 import Element from '../../../../public/image/element.webp'
 import Image from 'next/image'
+import FadeInListItems from '@/app/_animations/FadeInListItems'
 
 interface IntegrationSectionProps {
 	url: string
@@ -16,7 +17,9 @@ const IntegrationSection = ({ url }: IntegrationSectionProps) => {
 			id="livty"
 			className="bg-white bg-maquininha">
 			<div className=" container mx-auto flex justify-end ">
-				<div className="mt-80 md:mt-0 md:w-1/3 flex flex-col gap-4 items-end text-right">
+				<FadeInListItems
+					direction="top"
+					className="mt-80 md:mt-0 md:w-1/3 flex flex-col gap-4 items-end text-right">
 					<h2 className="text-3xl font-semibold text-[#1C1C20] leading-tight">
 						Integração de Vendas com o Bar do seu Evento
 					</h2>
@@ -32,7 +35,7 @@ const IntegrationSection = ({ url }: IntegrationSectionProps) => {
 						alt="Element"
 						className="mt-7"
 					/>
-				</div>
+				</FadeInListItems>
 			</div>
 		</Section>
 	)
