@@ -29,9 +29,9 @@ const config = {
 			// },
 
 			backgroundImage: () => ({
-				'new-image': 'url("../public/image/background.webp")',
-				'maquininha-image': 'url("../public/image/maquininha.webp")',
-				'event-image': 'url("../public/image/events.webp")',
+				'new-image': "url('../public/image/background.webp')",
+				'maquininha-image': "url('../public/image/maquininha.webp')",
+				'event-image': "url('../public/image/events.webp')",
 			}),
 
 			fontFamily: {
