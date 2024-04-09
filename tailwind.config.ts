@@ -23,7 +23,9 @@ const config = {
 				'gradient-conic':
 					'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
 				'pink-gradient': 'linear-gradient(180deg, #EB0171 0%, #C5005E 100%)',
-				'new-image': 'url("/public/image/background.webp")',
+				'new-image': 'url("../public/image/background.webp")',
+				'maquininha-image': 'url("../public/image/maquininha.webp")',
+				'event-image': 'url("../public/image/events.webp")',
 			},
 
 			fontFamily: {

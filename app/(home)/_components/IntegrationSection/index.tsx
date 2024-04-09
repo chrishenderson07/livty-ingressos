@@ -15,7 +15,7 @@ const IntegrationSection = ({ url }: IntegrationSectionProps) => {
 	return (
 		<Section
 			id="livty"
-			className="bg-white bg-maquininha">
+			className="bg-white bg-maquininha bg-maquininha-image">
 			<div className=" container mx-auto flex justify-end ">
 				<FadeInListItems
 					direction="top"

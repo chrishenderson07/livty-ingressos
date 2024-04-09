@@ -98,7 +98,7 @@ const Events = ({ url }: EventsProps) => {
 					</a>
 				</div>
 
-				<div className="flex-1 bg-events"></div>
+				<div className="flex-1 bg-events bg-event-image"></div>
 			</div>
 		</Section>
 	)

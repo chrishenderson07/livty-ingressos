@@ -39,18 +39,15 @@ body {
 }
 
 .bg-imagem {
-	background-image: url('../public/image/background.webp');
 	background-size: cover;
 	background-position: center;
 	background-repeat: repeat-y;
 }
 .bg-maquininha {
-	background-image: url('../public/image/maquininha.webp');
 	background-size: contain;
 	background-repeat: no-repeat;
 }
 .bg-events {
-	background-image: url('../public/image/events.webp');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;

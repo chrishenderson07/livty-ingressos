@@ -73,7 +73,7 @@ const Header = ({ url }: HeaderProps) => {
 	}
 
 	return (
-		<header className="bg-imagem ">
+		<header className="bg-imagem bg-new-image">
 			<MenuBar />
 
 			<motion.ul
