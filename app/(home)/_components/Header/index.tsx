@@ -161,7 +161,7 @@ const Header = ({ url }: HeaderProps) => {
 							<motion.li
 								className="item"
 								variants={item}>
-								<Card className="container md:absolute left-4 bottom-4 bg-white rounded-2xl w-60 md:w-72">
+								<Card className="container p-0 absolute left-0 md:left-4 bottom-4 bg-white rounded-2xl w-60 md:w-72">
 									<CardHeader className="space-y-3">
 										<BiDollar
 											size={32}
@@ -177,9 +177,9 @@ const Header = ({ url }: HeaderProps) => {
 							<motion.li
 								className="item"
 								variants={item}>
-								<Card className="md:absolute  p-0  right-4 top-1/2 bg-white rounded-2xl w-60 md:w-72 mt-4">
+								<Card className="absolute p-0 py-2 right-0 md:right-4 top-[40%] md:top-1/2 bg-white rounded-2xl w-60 md:w-72 mt-4">
 									<CardHeader className="py-0">
-										<CardTitle className="text-[#1D1D21] text-xl">
+										<CardTitle className="text-[#1D1D21] text-lg md:text-xl">
 											Mais de 20 Mil ingressos vendidos
 										</CardTitle>
 									</CardHeader>
