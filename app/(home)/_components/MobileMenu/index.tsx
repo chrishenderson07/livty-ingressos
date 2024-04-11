@@ -47,9 +47,7 @@ const MobileMenu = () => {
 					))}
 				</ul>
 
-				<DrawerClose>
-					<Link href={links[2].path}>Testeee</Link>
-				</DrawerClose>
+				<Link href={links[2].path}>Testeee</Link>
 			</DrawerContent>
 		</Drawer>
 	)
