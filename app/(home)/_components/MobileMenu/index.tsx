@@ -1,14 +1,8 @@
-'use client'
-
-import {
-	Drawer,
-	DrawerClose,
-	DrawerContent,
-	DrawerTrigger,
-} from '@/components/ui/drawer'
+import { Drawer, DrawerContent, DrawerTrigger } from '@/components/ui/drawer'
 import Link from 'next/link'
 import Image from 'next/image'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
+import { IoMenu } from 'react-icons/io5'
 
 const MobileMenu = () => {
 	const [isMenuOpen, setisMenuOpen] = useState(false)
@@ -20,24 +14,40 @@ const MobileMenu = () => {
 		{ path: '#eventos', label: 'Eventos' },
 	]
 
-	const handleMenu = () => {
-		const element = document.querySelector('#livty')
-		element?.scrollIntoView({ behavior: 'smooth' })
-		// setTimeout(() => {
-		// }, 500)
+	const handleMenu = (path: string) => {
+		const element = document.querySelector(path)
+		setisMenuOpen(false)
+		setTimeout(() => {
+			element?.scrollIntoView({ behavior: 'smooth' })
+		}, 300)
 	}
 
 	const handleMenuOpen = () => {
 		setisMenuOpen(true)
 	}
 
+	useEffect(() => {
+		document.addEventListener('scroll', () => {
+			setisMenuOpen(false)
+		})
+
+		return () => {
+			document.removeEventListener('scroll', () => {
+				setisMenuOpen(false)
+			})
+		}
+	}, [])
+
 	return (
 		<Drawer
 			direction="left"
 			open={isMenuOpen}
 			modal={false}>
-			<DrawerTrigger onClick={handleMenuOpen}>icone</DrawerTrigger>
-			<DrawerContent className="border-none">
+			<DrawerTrigger onClick={handleMenuOpen}>
+				<IoMenu size={38} />
+			</DrawerTrigger>
+
+			<DrawerContent className="border-none bg-[rgba(0,0,0,0.8)] rounded-none inset-y-0">
 				<Link href="/">
 					<Image
 						src={require('../../../../public/image/Logo.webp')}
@@ -51,16 +61,13 @@ const MobileMenu = () => {
 							className="animateMenu"
 							key={link.label}
 							onClick={() => {
-								handleMenu()
-								setisMenuOpen(false)
+								handleMenu(link.path)
 							}}>
-							<Link href={link.path}>
-								<DrawerClose>{link.label}</DrawerClose>
-							</Link>
+							{link.label}
 						</li>
 					))}
 				</ul>
-				<button onClick={handleMenu}>Novo btn</button>
+				{/* <button onClick={handleMenu}>Novo btn</button> */}
 			</DrawerContent>
 		</Drawer>
 	)

@@ -10,19 +10,18 @@ const MenuBar = () => {
 	const url =
 		'https://api.whatsapp.com/send?phone=551640423781&text=Ol%C3%A1%20Livty%20Ingressos,%20eu%20vim%20do%20seu%20site%20e%20gostaria%20de%20falar%20com%20um%20representante!'
 	return (
-		<nav className="container grid grid-rows-3 md:grid-rows-1 grid-cols-1 md:grid-cols-12 mx-auto py-4 md:py-2 ">
-			<div className="row-span-1 md:col-span-3 flex items-center justify-center">
+		<nav className="container grid  grid-rows-2 md:grid-rows-1 grid-cols-1 md:grid-cols-12 mx-auto py-4 md:py-2 ">
+			<div className={'row-span-1 md:col-span-3 flex items-center '}>
 				<Link href="/">
 					<Image
 						src={require('../../../../public/image/Logo.webp')}
 						alt="Logo"
 					/>
 				</Link>
+				{!isDesktop && <div className="ml-auto">{<MobileMenu />}</div>}
 			</div>
 
-			{!isDesktop ? (
-				<MobileMenu />
-			) : (
+			{isDesktop && (
 				<div className="row-span-1 md:col-span-6 flex items-center">
 					<ul className="w-full flex justify-center flex-wrap gap-2 md:gap-6">
 						<li className="animateMenu">
@@ -44,7 +43,7 @@ const MenuBar = () => {
 				</div>
 			)}
 
-			<div className="row-span-1 md:col-span-3 flex items-center justify-center">
+			<div className="mt-5 md:mt-0 row-span-1 md:col-span-3 flex items-center justify-center">
 				<Link href={url}>
 					<ButtonAnimation
 						label="Fale conosco"
