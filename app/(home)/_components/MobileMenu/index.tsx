@@ -21,13 +21,22 @@ const MobileMenu = () => {
 	]
 
 	const handleMenu = () => {
-		setisMenuOpen(!isMenuOpen)
+		const element = document.querySelector('#livty')
+		element?.scrollIntoView({ behavior: 'smooth' })
+		// setTimeout(() => {
+		// }, 500)
 	}
+
+	const handleMenuOpen = () => {
+		setisMenuOpen(true)
+	}
+
 	return (
 		<Drawer
 			direction="left"
-			open={isMenuOpen}>
-			<DrawerTrigger onClick={handleMenu}>icone</DrawerTrigger>
+			open={isMenuOpen}
+			modal={false}>
+			<DrawerTrigger onClick={handleMenuOpen}>icone</DrawerTrigger>
 			<DrawerContent className="border-none">
 				<Link href="/">
 					<Image
@@ -41,13 +50,17 @@ const MobileMenu = () => {
 						<li
 							className="animateMenu"
 							key={link.label}
-							onClick={handleMenu}>
-							<Link href={link.path}>{link.label}</Link>
+							onClick={() => {
+								handleMenu()
+								setisMenuOpen(false)
+							}}>
+							<Link href={link.path}>
+								<DrawerClose>{link.label}</DrawerClose>
+							</Link>
 						</li>
 					))}
 				</ul>
-
-				<Link href={links[2].path}>Testeee</Link>
+				<button onClick={handleMenu}>Novo btn</button>
 			</DrawerContent>
 		</Drawer>
 	)
