@@ -7,7 +7,7 @@ import { IoMenu } from 'react-icons/io5'
 const MobileMenu = () => {
 	const [isMenuOpen, setisMenuOpen] = useState(false)
 	const links = [
-		{ path: '/', label: 'Início' },
+		{ path: '/index', label: 'Início' },
 		{ path: '#gestao', label: 'Gestão Facilitada' },
 		{ path: '#livty', label: 'Livty Pay' },
 		{ path: '#feedback', label: 'Feedbacks' },
