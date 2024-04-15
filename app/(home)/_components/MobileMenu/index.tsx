@@ -2,12 +2,12 @@ import { Drawer, DrawerContent, DrawerTrigger } from '@/components/ui/drawer'
 import Link from 'next/link'
 import Image from 'next/image'
 import { useEffect, useState } from 'react'
-import { IoMenu } from 'react-icons/io5'
+import { IoMenu, IoClose } from 'react-icons/io5'
 
 const MobileMenu = () => {
 	const [isMenuOpen, setisMenuOpen] = useState(false)
 	const links = [
-		{ path: '/index', label: 'Início' },
+		{ path: '/', label: 'Início' },
 		{ path: '#gestao', label: 'Gestão Facilitada' },
 		{ path: '#livty', label: 'Livty Pay' },
 		{ path: '#feedback', label: 'Feedbacks' },
@@ -48,12 +48,19 @@ const MobileMenu = () => {
 			</DrawerTrigger>
 
 			<DrawerContent className="border-none bg-[rgba(0,0,0,0.8)] rounded-none inset-y-0">
-				<Link href="/">
-					<Image
-						src={require('../../../../public/image/Logo.webp')}
-						alt="Logo"
+				<div className="flex items-center justify-between">
+					<Link href="/">
+						<Image
+							src={require('../../../../public/image/Logo.webp')}
+							alt="Logo"
+						/>
+					</Link>
+
+					<IoClose
+						size={38}
+						onClick={() => setisMenuOpen(false)}
 					/>
-				</Link>
+				</div>
 
 				<ul className="space-y-4 mt-8">
 					{links.map((link) => (

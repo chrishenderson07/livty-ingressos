@@ -25,7 +25,7 @@ const MenuBar = () => {
 				<div className="row-span-1 md:col-span-6 flex items-center">
 					<ul className="w-full flex justify-center flex-wrap gap-2 md:gap-6">
 						<li className="animateMenu">
-							<Link href="/index"> Início </Link>
+							<Link href="/"> Início </Link>
 						</li>
 						<li className="animateMenu">
 							<a href="#gestao"> Gestão Facilitada </a>
