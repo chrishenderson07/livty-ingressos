@@ -43,8 +43,13 @@ const MobileMenu = () => {
 			direction="left"
 			open={isMenuOpen}
 			modal={false}>
-			<DrawerTrigger onClick={handleMenuOpen}>
-				<IoMenu size={38} />
+			<DrawerTrigger
+				onClick={handleMenuOpen}
+				className="focus:outline-none focus:border-none active:outline-none active:border-none">
+				<IoMenu
+					size={38}
+					className="focus:outline-none focus:border-none active:outline-none active:border-none "
+				/>
 			</DrawerTrigger>
 
 			<DrawerContent className="border-none bg-[rgba(0,0,0,0.8)] rounded-none inset-y-0">
